@@ -2,3 +2,18 @@ hr{
     width: 10%;
     border: 1px solid black;
 }
+.country{
+    border: 2px solid black;
+    margin: 3%;
+    background-color: rgba(68, 127, 175, 0.973);
+    border-radius: 10px;
+    box-shadow: -10px 12px 5px gray;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.country img{
+    width: 20%;
+    margin: auto auto;
+}
