@@ -13,7 +13,7 @@ const Countries = () => {
         
         <div>
            <h1>Hello !!{countries.length}</h1>
-           <div  className='countries-container'>
+           <div  className='countries-container container'>
            {
                 countries.map(country => <Country key={country.capital} country={country} name={country.name.common} cap={country.capital} population={country.population}></Country>)
             }
