@@ -7,6 +7,8 @@ import './Shop.css';
 const Shop = () => {
 
     const [products, setProducts] = useState([]);
+    const [cart, setCart]=useState([]);
+    //Products to be randered in UI
     const [displayProducts, setDisplayProducts] = useState([]);
     useEffect(()=>{
         // console.log('product api called');
@@ -18,7 +20,7 @@ const Shop = () => {
             // console.log('product api received');
             })
     },[])
-    const [cart, setCart]=useState([]);
+    
 
     useEffect(()=>{
         // console.log('localStorage called');
