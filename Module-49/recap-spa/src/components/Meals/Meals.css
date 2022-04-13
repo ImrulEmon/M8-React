@@ -1,1 +1,12 @@
-
+.meals{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.meals-container{
+    margin-left: 5%;
+    border-right: 1px solid lightgray;
+    margin-right: 10px;
+}
+.info-container{
+    padding: 2%;
+}

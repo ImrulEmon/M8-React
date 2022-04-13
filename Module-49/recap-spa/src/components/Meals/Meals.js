@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Meal from '../Meal/Meal';
+import './Meals.css'
 
 const Meals = () => {
     const [meals,setMeals]=useState([]);
@@ -13,15 +14,22 @@ const Meals = () => {
     },[])
     console.log(meals);
     return (
-        <div>
+       <div className='meals'>
+            <div className='meals-container'>
             <h2>Result : {meals.length}</h2>
             {
                 meals.map(meal=><Meal
                 key={meal.idMeal}
                 name={meal.strMeal}
+                img={meal.strMealThumb}
+                category={meal.strCategory}
                 ></Meal>)
             }
-        </div>
+            </div>
+            <div className='info-container'>
+                <h3>Meal Info</h3>
+            </div>
+       </div>
     );
 };
 
